@@ -9,6 +9,9 @@ export default function Home() {
         alt="background-image"
         className="w-full h-full object-cover object-center opacity-50"
       />
+      <div className="w-full h-screen">
+        
+      </div>
     </main>
   );
 }
