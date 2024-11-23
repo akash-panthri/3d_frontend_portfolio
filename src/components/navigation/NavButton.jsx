@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function NavButton({ x, y, label, link, icon, newTab }) {
@@ -6,7 +7,14 @@ function NavButton({ x, y, label, link, icon, newTab }) {
       className="absolute cursor-pointer z-50"
       style={{ transform: `translate(${x}, ${y})` }}
     >
-      {label}
+      <Link
+        href={link}
+        target={newTab ? "_blank" : "_self"}
+        className="text-foreground  rounded-full flex items-center justify-center"
+        aria-label={label}
+      >
+        {label}
+      </Link>
     </div>
   );
 }
