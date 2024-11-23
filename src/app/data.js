@@ -96,20 +96,20 @@ export const BtnList = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://github.com/akash-panthri",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/akash-panthri",
     icon: "linkedin",
     newTab: true,
   },
   {
-    label: "X",
-    link: "https://www.x.com/code_bucks",
-    icon: "twitter",
+    label: "Mail me",
+    link: "mailto:akashpanthri2000@gmail.com?subject=Opportunity%20for%20Full-Stack%20Developer&body=Dear%20Akash,%0A%0AOpportunity%20for%20Full-Stack%20Developer",
+    icon: "mail",
     newTab: true,
   },
   {
