@@ -1,4 +1,13 @@
-import {Home, Github, Linkedin, NotebookText, Palette, Phone, User,Mail  } from "lucide-react";
+import {
+  Home,
+  Github,
+  Linkedin,
+  NotebookText,
+  Palette,
+  Phone,
+  User,
+  Mail,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -18,10 +27,10 @@ function NavButton({ x, y, label, link, icon, newTab }) {
       case "linkedin":
         return <Linkedin className="w-full h-auto" strokeWidth={1.5} />;
       case "mail":
-        return <Mail  className="w-full h-auto" strokeWidth={1.5} />;
+        return <Mail className="w-full h-auto" strokeWidth={1.5} />;
       case "resume":
         return <NotebookText className="w-full h-auto" strokeWidth={1.5} />;
-  
+
       default:
         return <Home className="w-full h-auto" strokeWidth={1.5} />;
     }
@@ -34,13 +43,10 @@ function NavButton({ x, y, label, link, icon, newTab }) {
       <Link
         href={link}
         target={newTab ? "_blank" : "_self"}
-        className="text-foreground  rounded-full flex items-center justify-center"
+        className="text-foreground  rounded-full flex items-center justify-center bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px]"
         aria-label={label}
       >
-      <span className="relative  w-14 h-14 p-4">
-
-        {getIcon(icon)}
-      </span>
+        <span className="relative  w-14 h-14 p-4">{getIcon(icon)}</span>
       </Link>
     </div>
   );
