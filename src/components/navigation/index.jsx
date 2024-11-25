@@ -9,7 +9,7 @@ export default function Navigation() {
     <div className="w-full fixed h-screen flex items-center justify-center">
 
    
-    <div className="w-max flex items-center justify-between relative animate-spin-slow">
+    <div className="w-max flex items-center justify-center hover:pause relative animate-spin-slow">
       {BtnList.map((btn, index) => {
         const angleRad = (index * angleIncrement * Math.PI) / 180;
 
