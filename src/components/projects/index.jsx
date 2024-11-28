@@ -1,10 +1,11 @@
 import React from 'react'
+import ProjectLayout from './ProjectLayout'
 
 function ProjectList({projects}) {
   return (
     <div>
     {projects.map((project, index) => {
-        return <div className="" key={index}>{project.name}</div>;
+        return <ProjectLayout key={index} {...project} />
       })}
     </div>
   )
