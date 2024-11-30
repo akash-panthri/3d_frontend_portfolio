@@ -3,7 +3,7 @@ import bg from "../../../public/background/projects-background.png";
 import ProjectList from "@/components/projects";
 import Staff from "@/components/models/Staff";
 import RenderModel from "@/components/RenderModel";
-import { projectsData } from "../data";
+import { projectsData } from "../../data";
 
 
 export default function Home() {
