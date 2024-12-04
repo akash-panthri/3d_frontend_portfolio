@@ -1,5 +1,9 @@
 import React from "react";
 
+const ItemLayout = ({ children, className }) => {
+return <div className={className}>{children}</div>;
+}
+
 function AboutDetails() {
   return (
     <section className="py-20 w-full">
