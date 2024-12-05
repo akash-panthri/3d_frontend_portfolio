@@ -43,6 +43,14 @@ function AboutDetails() {
       <ItemLayout className={"col-span-8 !p-0"}>
         <img src="https://github-readme-stats.vercel.app/api?username=akash-panthri&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="akash-panthri" loading="lazy" className="w-full h-auto" />
       </ItemLayout>
+      <ItemLayout className={"col-span-full"}>
+          <img
+            className="w-full h-auto"
+            src={`https://skillicons.dev/icons?i=bootstrap,css,django,eclipse,express,figma,firebase,git,github,gmail,html,js,jquery,linkedin,linux,materialui,mongodb,mysql,nextjs,nodejs,npm,postgres,postman,powershell,prisma,pytorch,react,redux,regex,sass,stackoverflow,sublime,supabase,svg,tailwind,tensorflow,threejs,ts,vercel,vite,vscode,windows,wordpress,yarn`}
+            alt="akash-panthri"
+            loading="lazy"
+          />
+        </ItemLayout>
         
       </div>
     </section>
