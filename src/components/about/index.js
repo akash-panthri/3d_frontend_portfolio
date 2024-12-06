@@ -51,6 +51,15 @@ function AboutDetails() {
             loading="lazy"
           />
         </ItemLayout>
+
+        <ItemLayout className={"col-span-6 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src={'https://streak-stats.demolab.com/?user=akash-panthri&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B'}
+            alt="akash-panthri"
+            loading="lazy"
+          />
+        </ItemLayout>
         
       </div>
     </section>
