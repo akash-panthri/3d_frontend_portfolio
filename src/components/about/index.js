@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Link from "next/link";
 const ItemLayout = ({ children, className }) => {
 return <div  className={clsx(
     "custom-bg p-8 rounded-xl flex items-center justify-center space-y-8",
@@ -60,7 +61,20 @@ function AboutDetails() {
             loading="lazy"
           />
         </ItemLayout>
-        
+        <ItemLayout className={"col-span-6 !p-0"}>
+          <Link
+            href="https://github.com/akash-panthri/google_clone_nextjs_project"
+            target="_blank"
+            className="w-full"
+          >
+            <img
+              className="w-full h-auto"
+              src={'https://github-readme-stats.vercel.app/api/pin/?username=akash-panthri&repo=google_clone_nextjs_project&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2'}
+              alt="akash-panthri"
+              loading="lazy"
+            />
+          </Link>
+        </ItemLayout>
       </div>
     </section>
   );
