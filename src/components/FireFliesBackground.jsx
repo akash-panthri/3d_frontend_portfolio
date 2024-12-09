@@ -12,9 +12,7 @@ const createFirefly = () => ({
 
 function FireFliesBackground() {
     const [fireflies, setFireflies] = useState([]);
-console.log("fireflies")
-console.log(fireflies)
-console.log("firefliesdfas")
+
     useEffect(() => {
         const addFireflyPeriodically = () => {
           const newFirefly = createFirefly();
