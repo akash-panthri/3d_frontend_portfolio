@@ -14,7 +14,8 @@ export default function Navigation() {
     <div className="w-full fixed h-screen flex items-center justify-center">
     <ResponsiveComponent>
 
-    
+    {({ size }) => {
+      return size && size >= 480 ? (
       <div className="w-max flex items-center justify-center group hover:pause relative animate-spin-slow">
         {BtnList.map((btn, index) => {
           const angleRad = (index * angleIncrement * Math.PI) / 180;
@@ -28,7 +29,12 @@ export default function Navigation() {
           const y = `calc(${radius}*${Math.sin(angleRad)})`;
           return <NavButton key={index} x={x} y={y} {...btn} />;
         })}
-      </div>
+      </div>) : (
+        <>
+          <h1>Navigation Response</h1>
+        </>
+      );
+    }}
       </ResponsiveComponent>
     </div>
   );
