@@ -62,8 +62,30 @@ function NavButton({ x, y, label, link, icon, newTab }) {
       </Link>
     </div>
     ):
-    
-    <></>
+    (
+
+    <>
+    <div
+      className="w-fit cursor-pointer z-50"
+    >
+      <Link
+        href={link}
+        target={newTab ? "_blank" : "_self"}
+        className="text-foreground  rounded-full flex items-center justify-center bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm"
+        aria-label={label}
+        name={label}
+      >
+        <span className="relative w-10 h-10 xs:w-14 xs:h-14 p-2.5 xs:p-4 hover:text-accent">
+          {getIcon(icon)}
+          <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
+          <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap">
+            {label}
+          </span>
+        </span>
+      </Link>
+    </div>
+    </>
+    )
     }}
     </ResponsiveComponent>
   );
