@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import ResponsiveComponent from "../ResponsiveComponent";
 
 function NavButton({ x, y, label, link, icon, newTab }) {
   const getIcon = (icon) => {
@@ -36,6 +37,9 @@ function NavButton({ x, y, label, link, icon, newTab }) {
     }
   };
   return (
+    <ResponsiveComponent>
+
+    
     <div
       className="absolute cursor-pointer z-50"
       style={{ transform: `translate(${x}, ${y})` }}
@@ -56,6 +60,7 @@ function NavButton({ x, y, label, link, icon, newTab }) {
         </span>
       </Link>
     </div>
+    </ResponsiveComponent>
   );
 }
 
