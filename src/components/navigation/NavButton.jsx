@@ -38,7 +38,8 @@ function NavButton({ x, y, label, link, icon, newTab }) {
   };
   return (
     <ResponsiveComponent>
-
+  {({ size }) => {
+    return size && size >= 480 ? (
     
     <div
       className="absolute cursor-pointer z-50"
@@ -60,6 +61,10 @@ function NavButton({ x, y, label, link, icon, newTab }) {
         </span>
       </Link>
     </div>
+    ):
+    
+    <></>
+    }}
     </ResponsiveComponent>
   );
 }
