@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import React from "react";
 import ResponsiveComponent from "../ResponsiveComponent";
+import clsx from "clsx";
 
 function NavButton({
   x,
