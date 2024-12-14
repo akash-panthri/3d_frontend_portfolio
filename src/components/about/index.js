@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 const ItemLayout = ({ children, className }) => {
 return <div  className={clsx(
-    "custom-bg p-8 rounded-xl flex items-center justify-center space-y-8",
+    "custom-bg p-6 sm:p-8 rounded-xl flex items-center justify-center space-y-8",
     className
   )}>{children}</div>;
 }
@@ -28,20 +28,20 @@ function AboutDetails() {
             spells and technologies to shape the future of the web.
           </p>
       </ItemLayout>
-      <ItemLayout className={"col-span-4 text-accent"} > 
-      <p className="font-semibold w-full text-left text-5xl">
+      <ItemLayout className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"} > 
+      <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
             100+ <sub className="font-semibold text-base">Projects</sub>
           </p>
       </ItemLayout>
-      <ItemLayout className={"col-span-4 text-accent"} > 
-      <p className="font-semibold w-full text-left text-5xl">
+      <ItemLayout className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"} > 
+      <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
             2+ <sub className="font-semibold text-base">Year Experience</sub>
           </p>
       </ItemLayout>
-      <ItemLayout className={"col-span-4 !p-0"}>
+      <ItemLayout className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}>
         <img src="https://github-readme-stats.vercel.app/api/top-langs?username=akash-panthri&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="akash-panthri" loading="lazy" className="w-full h-auto" />
       </ItemLayout>
-      <ItemLayout className={"col-span-8 !p-0"}>
+      <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
         <img src="https://github-readme-stats.vercel.app/api?username=akash-panthri&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="akash-panthri" loading="lazy" className="w-full h-auto" />
       </ItemLayout>
       <ItemLayout className={"col-span-full"}>
@@ -53,7 +53,7 @@ function AboutDetails() {
           />
         </ItemLayout>
 
-        <ItemLayout className={"col-span-6 !p-0"}>
+        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <img
             className="w-full h-auto"
             src={'https://streak-stats.demolab.com/?user=akash-panthri&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B'}
@@ -61,7 +61,7 @@ function AboutDetails() {
             loading="lazy"
           />
         </ItemLayout>
-        <ItemLayout className={"col-span-6 !p-0"}>
+        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <Link
             href="https://github.com/akash-panthri/google_clone_nextjs_project"
             target="_blank"
@@ -69,7 +69,7 @@ function AboutDetails() {
           >
             <img
               className="w-full h-auto"
-              src={'https://github-readme-stats.vercel.app/api/pin/?username=akash-panthri&repo=google_clone_nextjs_project&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2'}
+              src={'https://github-readme-stats.vercel.app/api/pin/?username=akash-panthri&repo=google_clone_nextjs_project&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false'}
               alt="akash-panthri"
               loading="lazy"
             />
