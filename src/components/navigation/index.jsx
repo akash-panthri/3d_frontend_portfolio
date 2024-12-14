@@ -41,7 +41,7 @@ export default function Navigation() {
                 {BtnList.slice(BtnList.length / 2, BtnList.length).map(
                   (btn, index) => {
                     
-                    return <NavButton key={index} x={0} y={0} {...btn} />;
+                    return <NavButton key={index} x={0} y={0} {...btn} labelDirection="left" />;
                   }
                 )}
               </div>
