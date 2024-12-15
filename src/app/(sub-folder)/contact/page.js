@@ -8,10 +8,10 @@ export default function Contact() {
       <Image
         src={bg}
         alt="background-image"
-        className="-z-50 w-full h-full object-cover object-center opacity-25 fixed top-0 left-0"
+        className="-z-50 w-full h-full object-cover object-center opacity-25 fixed top-0 left-0 py-8 sm:py-0"
       />
    <article className="relative w-full flex flex-col items-center justify-center space-y-8">
-        <div className="flex flex-col items-center justify-center space-y-6 w-3/4">
+        <div className="flex flex-col items-center justify-center space-y-6 w-full sm:w-3/4">
           <h1 className="text-accent font-semibold text-center text-4xl capitalize">
             summon the wizard
           </h1>
