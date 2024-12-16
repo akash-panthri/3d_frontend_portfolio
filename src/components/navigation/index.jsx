@@ -16,8 +16,6 @@ const container = {
   },
 };
 
-
-
 export default function Navigation() {
   const angleIncrement = 360 / BtnList.length;
   const size = useScreenSize();
@@ -28,7 +26,12 @@ export default function Navigation() {
       <ResponsiveComponent>
         {({ size }) => {
           return size && size >= 480 ? (
-            <motion.div className="w-max flex items-center justify-center group hover:pause relative animate-spin-slow">
+            <motion.div
+              variants={container}
+              initial="hidden"
+              animate="show"
+              className="w-max flex items-center justify-center group hover:pause relative animate-spin-slow"
+            >
               {BtnList.map((btn, index) => {
                 const angleRad = (index * angleIncrement * Math.PI) / 180;
 
