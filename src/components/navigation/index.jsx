@@ -47,12 +47,18 @@ export default function Navigation() {
             </motion.div>
           ) : (
             <>
-              <div className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col items-start xs:items-center space-y-4 justify-center group relative">
+              <motion.div
+              variants={container}
+              initial="hidden"
+              animate="show" className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col items-start xs:items-center space-y-4 justify-center group relative">
                 {BtnList.slice(0, BtnList.length / 2).map((btn, index) => {
                   return <NavButton key={index} x={0} y={0} {...btn} />;
                 })}
-              </div>
-              <div className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col items-end xs:items-center justify-center space-y-4 group relative">
+              </motion.div>
+              <motion.div
+              variants={container}
+              initial="hidden"
+              animate="show" className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col items-end xs:items-center justify-center space-y-4 group relative">
                 {BtnList.slice(BtnList.length / 2, BtnList.length).map(
                   (btn, index) => {
                     return (
@@ -66,7 +72,7 @@ export default function Navigation() {
                     );
                   }
                 )}
-              </div>
+              </motion.div>
             </>
           );
         }}
