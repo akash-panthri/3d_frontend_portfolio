@@ -12,6 +12,12 @@ import Link from "next/link";
 import React from "react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
+import { motion } from "framer-motion";
+
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 },
+};
 
 function NavButton({
   x,
