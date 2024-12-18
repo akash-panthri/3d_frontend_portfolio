@@ -1,9 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
+import { motion } from "framer-motion";
+
+const item = {
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 0 },
+};
+
+const ProjectLink = motion(Link);
 
 function ProjectLayout({ name, description, date, demoLink }) {
   return (
-    <Link
+    <ProjectLink
+    variants={item}
     href={demoLink}
      className='flex text-sm md:text-base items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg'>
     
@@ -15,7 +24,7 @@ function ProjectLayout({ name, description, date, demoLink }) {
     <p className="text-muted sm:text-foreground">
         {new Date(date).toDateString()}
       </p>
-    </Link>
+    </ProjectLink>
   )
 }
 
