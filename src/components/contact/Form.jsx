@@ -3,6 +3,8 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { Toaster, toast } from "sonner";
+import { motion } from "framer-motion";
+
 
 const container = {
   hidden: { opacity: 0 },
@@ -75,11 +77,15 @@ export default function Form() {
     <>
       <Toaster richColors={true} />
 
-      <form
+      <motion.form
+      variants={container}
+        initial="hidden"
+        animate="show"
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-md w-full flex flex-col items-center justify-center space-y-4"
       >
-        <input
+        <motion.input
+        variants={item}
           type="text"
           placeholder="name"
           {...register("name", {
@@ -134,7 +140,7 @@ export default function Form() {
       hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
       "
         />
-      </form>
+      </motion.form>
     </>
   );
 }
