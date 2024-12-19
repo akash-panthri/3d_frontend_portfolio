@@ -12,6 +12,7 @@ const container = {
     opacity: 1,
     transition: {
       staggerChildren: 0.3,
+      delayChildren: 0.2,
     },
   },
 };
@@ -102,7 +103,8 @@ export default function Form() {
             {errors.name.message}
           </span>
         )}
-        <input
+        <motion.input
+        variants={item}
           type="email"
           placeholder="email"
           {...register("email", { required: "This field is required!" })}
@@ -113,7 +115,8 @@ export default function Form() {
             {errors.email.message}
           </span>
         )}
-        <textarea
+        <motion.textarea
+        variants={item}
           placeholder="message"
           {...register("message", {
             required: "This field is required!",
@@ -133,7 +136,8 @@ export default function Form() {
             {errors.message.message}
           </span>
         )}
-        <input
+        <motion.input
+        variants={item}
           type="submit"
           value="Cast your message!"
           className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
